@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- <head><link rel="stylesheet" type="text/css" href="{% static 'utilities/about.css'%}"> -->
+<style>
+    .image{
+    padding-left: 12%;
+    
+}
+.whyweare{
+    padding-left:40%;
+}
+.whatwedo{
+    padding-left:40%;
+}
+.quote{
+    margin-top:30%;
+    margin-left:20%;
+}
+.para{
+    margin-left:10%;
+    margin-right:5%;
+    font-family:italic;
+}
+body {
+    font-family:italic;
+    /* background-color: skyblue; */
+    color:black;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGwlluPTZUyHB-fb4NYbl-cF3KmRDj6PL7mXNfrwO-ntW2vOxp") no-repeat;
+    background:cover;
+  }
+  .ccdLogo {
+    background: url("https://crystalcleardesigns.co.uk/img/CCDlogo.svg") no-repeat center / 100%;
+    height:100px;
+    width:150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .ccdLogo:before {
+    content: "Click to view more pens";
+    color:transparent;
+    font-size:14px;
+    position: absolute;
+    top:-2px;
+    left:5px;
+    transition:0.4s;
+  }
+  .ccdLogo:hover:before {
+  color:#2B7B9B;
+    transform: translateY(-10px);
+  }
+  
+  
+  .wrapper {
+    margin: 5vh auto 0;
+    margin-left: 30%;
+  }
+  .pyramid {
+    float: left;
+    shape-outside:polygon(310px 0px, 130px 405px, 558px 405px);
+    padding-right:60px;
+    width: 500px;
+    height:500px;
+  }
+  .zone {
+    padding:40px 0;
+   margin: 0 auto;
+    text-align:center;
+    color: black;
+    background-blend-mode:darken;
+    transition: 0.5s;
+  }
+  .zone:nth-child(1){
+     background:rgba(42, 1, 107, 0.7)  center / cover;
+    width: 25%;
+    clip-path:url("#part1");
+    clip-path:polygon(50% 0%,100% 100%, 0% 100%);
+    -webkit-clip-path:polygon(50% 0%,100% 100%, 0% 100%);
+     
+  }
+  .zone:nth-child(2){ background: rgba(2, 27, 170, 0.7) center / cover;
+    width: 50%;
+    clip-path:url("#part2");
+    clip-path:polygon(25% 0%,75% 0, 100% 100%,0% 100%);
+    -webkit-clip-path:polygon(25% 0%,75% 0, 100% 100%,0% 100%);
+  }
+  .zone:nth-child(3){
+    width: 75%;
+    background:rgba(4, 100, 226, 0.7) center /cover;
+    clip-path:url("#part3");
+    clip-path:polygon(16.5% 0, 83% 0, 100% 100%,0% 100%);
+    -webkit-clip-path:polygon(16.5% 0, 83% 0, 100% 100%,0% 100%);
+  }
+  .zone:nth-child(4){
+    background:rgba(68, 2, 250, 0.7)  center / cover;
+    width: 100%;
+    clip-path:url("#part4");
+    clip-path:polygon(12.5% 0, 0%,87.5% 0, 100% 100%,0% 100%);
+    -webkit-clip-path:polygon(12.5% 0,87.5% 0, 100% 100%,0% 100%);
+  }
+  .zone:hover {
+    background-color: rgba(31, 30, 30, 0.116);
+  }
+</style>
+
+</head>
+<html>
+<body>
+    <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS61NqLjO3orCHV8bKTf-GGQ4sqn9tS6_1aWlPVDSwXazVtis4V"style="width:1050px;
+          height:400px;">
+    </div>
+    <div class ="whyweare">
+        <h1>WHY WE ARE</h1>
+    </div>
+    <div class="para">
+    <h2>Every person thinks of changing the world.But most of the people will stop due to lack of encouragement and guidance.We are here to  willingly to help and develop all the ideas that invoked in your mind.Mentoring helps to push you in the right direction by accelerating your speed where you can see your ideas in the reality.This website provides the best mentors with different fields to flow in differnt streams of ideas.</h2>
+     </div>
+    
+<div class="wrapper">
+    <div class="pyramid">
+      <div class="zone">have fun</div>
+      <div class="zone">Interact & Learn</div>
+      <div class="zone">Build Trust</div>
+      <div class="zone">have idea</div>
+    </div>
+    
+  </div>
+  
+  <svg width="0" height="0">
+      <defs>
+     <clipPath id="part1" clipPathUnits= "objectBoundingBox">
+       <polygon points= "0.5 0, 1 1, 0 1"/>
+     </clipPath>
+     <clipPath id="part2" clipPathUnits= "objectBoundingBox">
+       <polygon points= "0.25 0,0.75 0, 1 1, 0 1"/>
+     </clipPath>
+     <clipPath id="part3" clipPathUnits= "objectBoundingBox">
+       <polygon points= "0.165 0,0.83 0, 1 1, 0 1"/>
+     </clipPath>
+     <clipPath id="part4" clipPathUnits= "objectBoundingBox">
+       <polygon points= "0.125 0,0.875 0, 1 1, 0 1"/>
+     </clipPath>
+       </defs>
+  </svg>
+  <div class="quote">
+         <h3>Junot Diaz says Colleagues are a wonderful thing – but mentors, that’s where the real work gets done.</h3>
+   </div>
+   <div class="whatwedo">
+       <h1>WHAT WE DO</h1>
+   </div>
+   <div class="icon">
+       <img src="https://lh3.googleusercontent.com/f_S7Uz-wZIWQr0K5gS1gkX0VEHFVl4E83keFlw1D_3w3JgPA6yoe3k72_LKL7btPIwkJLA=s85"style="width:200px;height:200px;">
+   </div>
+</body>
+</html>
